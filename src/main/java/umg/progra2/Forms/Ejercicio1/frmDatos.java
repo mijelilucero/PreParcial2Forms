@@ -46,6 +46,7 @@ public class frmDatos {
         comboBoxDepartamento.addItem("Marketing");
         comboBoxDepartamento.addItem("Ventas");
         comboBoxDepartamento.addItem("Atención al Cliente");
+        comboBoxDepartamento.setSelectedIndex(-1);
 
         DatoService datosc = new DatoService();
 
@@ -61,7 +62,7 @@ public class frmDatos {
 
                     try{
                         datosc.createDato(dato);
-                        JOptionPane.showMessageDialog(null, "Registro creado correctamente");
+                        JOptionPane.showMessageDialog(null, "Registro creado correctamente.");
                     }catch(Exception ex){
                         JOptionPane.showMessageDialog(null, "Ha ocurrido un error al crear el registro: " + ex.getMessage());
                     }
@@ -167,7 +168,7 @@ public class frmDatos {
                             JOptionPane.showMessageDialog(null, "El registro no se eliminó.");
                         }
                     } catch (Exception ex) {
-                        JOptionPane.showMessageDialog(null, "Ha ocurrido un error al buscar el registro: " + ex.getMessage());
+                        JOptionPane.showMessageDialog(null, "Ha ocurrido un error al eliminar el registro: " + ex.getMessage());
                     }
 
                     LimpiarComponentes();
@@ -181,7 +182,7 @@ public class frmDatos {
         textFieldCodigo.setText("");
         textFieldNombre.setText("");
         textFieldApellido.setText("");
-        comboBoxDepartamento.setSelectedIndex(0);
+        comboBoxDepartamento.setSelectedIndex(-1);
         textFieldFechaNacimiento.setText("");
     }
 
@@ -206,7 +207,6 @@ public class frmDatos {
 
         return null;
     }
-
 
 
     public boolean validarFechaNacimiento (java.util.Date utilDate){
@@ -234,17 +234,5 @@ public class frmDatos {
 
             return true;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
