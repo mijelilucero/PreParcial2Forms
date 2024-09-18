@@ -11,4 +11,4 @@ Interfaces gráficas de los formularios:
 
 Catálogo de la champions league con datos:
 
-![image](https://github.com/user-attachments/assets/034bc073-a9ec-4774-9a63-c193bc301fc7)
+![image](https://github.com/user-attachments/assets/79770522-e7ae-433e-b8fe-6f298ad9e68a)
