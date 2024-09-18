@@ -144,7 +144,7 @@ public class frmUsuarios {
 
                                     if (respuestaConfirmacion == JOptionPane.YES_OPTION) {
                                         usuariosc.updateUser(usuario);
-                                        JOptionPane.showMessageDialog(null, "Registro actuailizado correctamente");
+                                        JOptionPane.showMessageDialog(null, "Registro actualizado correctamente");
                                         LimpiarComponentes();
                                     } else {
                                         JOptionPane.showMessageDialog(null, "El registro no se actualizó.");
