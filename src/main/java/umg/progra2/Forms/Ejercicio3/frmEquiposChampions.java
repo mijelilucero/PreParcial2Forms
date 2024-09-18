@@ -30,7 +30,7 @@ public class frmEquiposChampions {
     private JTextField textFieldPatrocinador;
 
 
-    public static void main(String[] args) {
+    public void mostrar() {
         JFrame frame = new JFrame("Formulario de los Equipos de la Champions");
         frame.setContentPane(new frmEquiposChampions().JPanelfrmEquiposChampions);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

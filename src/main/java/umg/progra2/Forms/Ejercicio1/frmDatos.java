@@ -27,7 +27,7 @@ public class frmDatos {
     private JButton ButtonCrearRegistro;
 
 
-    public static void main(String[] args) {
+    public void mostrar() {
         JFrame frame = new JFrame("Formulario de Datos Personales");
         frame.setContentPane(new frmDatos().jPanelFrmDatos);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

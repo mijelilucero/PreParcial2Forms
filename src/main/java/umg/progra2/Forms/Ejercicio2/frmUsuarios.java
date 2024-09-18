@@ -22,7 +22,7 @@ public class frmUsuarios {
     private JRadioButton RadioButtonActivo;
     private JComboBox comboBoxSeccion;
 
-    public static void main(String[] args) {
+    public void mostrar() {
         JFrame frame = new JFrame("Formulario para Gestión de Datos de Estudiantes");
         frame.setContentPane(new frmUsuarios().JPanelfrmUsuarios);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
